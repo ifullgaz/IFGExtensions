@@ -1,6 +1,6 @@
 # IFGExtensions
 
-[![CI Status](https://img.shields.io/travis/Emmanuel Merali/IFGExtensions.svg?style=flat)](https://travis-ci.org/Emmanuel Merali/IFGExtensions)
+[![CI Status](https://img.shields.io/travis/ifullgaz/IFGExtensions.svg?style=flat)](https://travis-ci.org/ifullgaz/IFGExtensions)
 [![Version](https://img.shields.io/cocoapods/v/IFGExtensions.svg?style=flat)](https://cocoapods.org/pods/IFGExtensions)
 [![License](https://img.shields.io/cocoapods/l/IFGExtensions.svg?style=flat)](https://cocoapods.org/pods/IFGExtensions)
 [![Platform](https://img.shields.io/cocoapods/p/IFGExtensions.svg?style=flat)](https://cocoapods.org/pods/IFGExtensions)

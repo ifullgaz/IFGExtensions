@@ -19,7 +19,7 @@ private func addBlurView(to view: UIView) -> UIVisualEffectView {
     return blurView
 }
 
-private extension UIVisualEffectView {
+public extension UIVisualEffectView {
     func fadeIn(_ style:UIBlurEffect.Style = .light, withDuration duration: TimeInterval = 1.0) {
         let animator = UIViewPropertyAnimator(duration: duration, curve: .easeIn) {
             self.effect = UIBlurEffect(style: style)

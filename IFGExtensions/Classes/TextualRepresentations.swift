@@ -1,6 +1,6 @@
 //
 //  TextualRepresentations.swift
-//  shopper2
+//  IFGExtensions
 //
 //  Created by Emmanuel Merali on 10/12/2019.
 //  Copyright © 2019 Trax Retail. All rights reserved.
