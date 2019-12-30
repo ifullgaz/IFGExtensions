@@ -54,3 +54,26 @@ public extension CGPoint {
         return sqrt(x * x + y * y)
     }
 }
+
+public extension ARSCNView {
+    /// Center of the view
+    var screenCenter: CGPoint {
+        let bounds = self.bounds
+        return CGPoint(x: bounds.midX, y: bounds.midY)
+    }
+
+    func castRay(for query: ARRaycastQuery) -> [ARRaycastResult] {
+        return session.raycast(query)
+    }
+
+    func getRaycastQuery(from point: CGPoint, for alignment: ARRaycastQuery.TargetAlignment = .any) -> ARRaycastQuery? {
+        return raycastQuery(from: point, allowing: .estimatedPlane, alignment: alignment)
+    }
+
+    func getEstimatedPlanes(from point: CGPoint, for alignment: ARRaycastQuery.TargetAlignment = .any) -> [ARRaycastResult]? {
+        if let query = getRaycastQuery(from: point, for: alignment) {
+            return castRay(for: query)
+        }
+        return nil
+    }
+}
