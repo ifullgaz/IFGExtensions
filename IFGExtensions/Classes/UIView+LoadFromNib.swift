@@ -27,7 +27,8 @@ public extension LoadableFromNib where Self: UIView {
             let secondAttribute = $0.secondAttribute
             let multiplier = $0.multiplier
             let constant = $0.constant
-            return NSLayoutConstraint(
+            let priority = $0.priority
+            let constraint = NSLayoutConstraint(
                 item: firstItem as Any,
                 attribute: firstAttribute,
                 relatedBy: relation,
@@ -35,6 +36,8 @@ public extension LoadableFromNib where Self: UIView {
                 attribute: secondAttribute,
                 multiplier: multiplier,
                 constant: constant)
+            constraint.priority = priority
+            return constraint
         }
     }
     
